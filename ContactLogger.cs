@@ -63,11 +63,11 @@ namespace GuardRex.AzureTableStorageContactLogger
                 entity.Message = message;
                 entity.Result = result;
                 TableResult operationResult = await table_Contact.ExecuteAsync(TableOperation.Insert(entity));
-                if (operationResult.HttpStatusCode != 201 && logger != null)
+                if (operationResult.HttpStatusCode != 204 && logger != null)
                 {
                     logger.Error(operationResult.HttpStatusCode.ToString() + " " + operationResult.Result.ToString());
                 }
-                return operationResult.HttpStatusCode == 201 ? true : false;
+                return operationResult.HttpStatusCode == 204 ? true : false;
             }
             catch (Exception ex)
             {

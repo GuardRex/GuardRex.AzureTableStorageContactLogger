@@ -42,3 +42,5 @@ If the table is not present it will be created automatically in the storage acco
 Version | Changes Made
 ------- | ------------
 1.0.0   | Initial Release
+1.0.1   | Update project Url
+1.0.2   | Bugfix: Return true (success) on a 204 (No Content) response from the service
