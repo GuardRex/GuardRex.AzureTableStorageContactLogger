@@ -30,5 +30,5 @@
         "projectUrl": "https://github.com/GuardRex/GuardRex.AzureTableStorageContactLogger"
     },
     "title": "Azure Table Storage Contact Logger",
-    "version": "1.0.2"
+    "version": "1.0.3"
 }
